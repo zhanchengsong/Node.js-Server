@@ -1,0 +1,42 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "description": "This is an basic implementation of a authentication server by Zhancheng Song",
+      "version": "0.0.1",
+      "title": "AuthServer",
+      "contact": {
+        "email": "zhanchengdev@gmail.com"
+      },
+      "license": {
+        "name": "MIT",
+        "url": "https://github.com/swagger-api/swagger-ui/blob/master/LICENSE"
+      }
+    },
+    "host": "localhost",
+    "basePath": "/",
+    "produces": ["application/json"],
+    "schemes": [
+      "https"
+    ],
+    "paths": {
+        "/register": {
+          "post": {
+            "operationId": "UserRegistration",
+            "summary": "Regsiter a user",
+            "produces": [
+              "application/json"
+            ],
+            "responses": {
+              "201": {
+                "description": "User successfully created ",
+                "examples": {
+                  "application/json": "{}"
+                }
+              }
+              
+            }
+          }
+        }
+    }
+}
+  
